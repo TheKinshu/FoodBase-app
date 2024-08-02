@@ -10,7 +10,7 @@ class PostgresSettings(BaseSettings):
 
 class Settings(BaseSettings):
     app_name: str = "Drawtool Backend"
-    postgres: PostgresSettings = PostgresSettings()
+    postgres: PostgresSettings = PostgresSettings(username="test")
     openapi: str = ''
     openai_api_max_connection_timeout: int = 20
     aws_region: str = 'us-west-2'
